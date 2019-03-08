@@ -1,0 +1,20 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lookguy/zxb-react-test.git"
+  },
+  "keywords": [],
+  "author": "招雄彬 <614619114@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lookguy/zxb-react-test/issues"
+  },
+  "homepage": "https://github.com/lookguy/zxb-react-test#readme"
+}
