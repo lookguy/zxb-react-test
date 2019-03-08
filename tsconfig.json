@@ -2,11 +2,11 @@
     "compilerOptions": {
       "declaration": true,
       "baseUrl": ".",
-      "paths": {
-        "utils/*": ["include/utils/*"],
-        "stylesheets": ["stylesheets/"],
-        "examples": ["examples/"]
-      },
+      // "paths": {
+      //   "utils/*": ["include/utils/*"],
+      //   "stylesheets": ["stylesheets/"],
+      //   "examples": ["examples/"]
+      // },
       "rootDirs": ["include"],
       "outDir": "dist",
       "module": "esnext",
