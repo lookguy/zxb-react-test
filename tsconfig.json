@@ -25,14 +25,7 @@
       "allowSyntheticDefaultImports": true,
       "noUnusedLocals": true
     },
-    "include": [
-      "example.tsx",
-      "lib/**/*",
-      "include/**/*",
-      "examples/**/*",
-      "types/**/*",
-      "test/**/*"
-    ],
+    // "include": [],
     "exclude": [
       "node_modules",
       "build",
