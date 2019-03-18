@@ -1,6 +1,5 @@
 const path = require('path')
 module.exports = {
-    // mode: 'development',
     entry: {
         index: './lib/index.tsx'
     },
@@ -17,7 +16,11 @@ module.exports = {
             {
                 test: /\.tsx?$/,
                 loader: 'awesome-typescript-loader'
-            }
+            },
+            {
+                test: /\.svg?$/,
+                loader: 'svg-sprite-loader',
+            },
         ]
     },
 }
