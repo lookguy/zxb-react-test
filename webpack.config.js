@@ -9,7 +9,7 @@ module.exports = {
         libraryTarget: 'umd',
     },
     resolve: {
-        extensions: ['.ts','.tsx','.js','.jsx'],
+        extensions: ['.ts', '.tsx', '.js', '.jsx'],
     },
     module: {
         rules: [
@@ -21,6 +21,10 @@ module.exports = {
                 test: /\.svg?$/,
                 loader: 'svg-sprite-loader',
             },
+            {
+                test: /\.s([ac])ss?$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            }
         ]
     },
 }
