@@ -1,6 +1,6 @@
 import Icon from './icon';
 import ReactDOM from 'react-dom';
-import React from 'react';
+import * as React from 'react'
 
 const fn: React.MouseEventHandler = (e) => {
     console.log(e.target);
