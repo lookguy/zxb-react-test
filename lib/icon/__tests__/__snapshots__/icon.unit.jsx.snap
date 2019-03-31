@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`icon render icon successful 1`] = `
+<svg
+  className="zui-icon"
+>
+  <use
+    xlinkHref="#alipay"
+  />
+</svg>
+`;
