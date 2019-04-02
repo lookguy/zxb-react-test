@@ -13,5 +13,5 @@ describe('icon', () => {
         const component = mount(<Icon name='alipay' onClick={fn}/>);
         component.find('svg').simulate('click');
         expect(fn).toBeCalled();
-    })
+    });
 });
