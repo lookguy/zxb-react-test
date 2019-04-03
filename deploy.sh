@@ -1,3 +1,3 @@
-#!/bin/env bash
-npm version patch
+#!/usr/bin/env bash
+npm version $1
 git push
