@@ -1,5 +1,5 @@
 interface Options {
-    extra: string;
+    extra: string | undefined;
 }
 function scopedClassMaker(prefix: string) {
     return function x(name? :string, options?: Options) {
