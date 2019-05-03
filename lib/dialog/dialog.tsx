@@ -2,8 +2,8 @@ import * as React from "react";
 import { Fragment, ReactNode, ReactFragment } from 'react';
 import './dialog.scss'
 import Icon from "../icon/icon";
-import { scopedClassMaker } from "../classes";
 import ReactDOM from 'react-dom';
+import {scopedClassMaker} from "../helpers/classes";
 
 interface Props {
     visible: boolean;
@@ -57,7 +57,7 @@ const _modal = (content: ReactNode, buttons?: Array<React.ReactElement>, afterCl
         ReactDOM.render(React.cloneElement(component, { visible: false }), div);
         ReactDOM.unmountComponentAtNode(div);
         div.remove();
-    }
+    };
     const component =
         <Dialog
             visible={true}
@@ -75,7 +75,7 @@ const _modal = (content: ReactNode, buttons?: Array<React.ReactElement>, afterCl
 };
 
 const alert = (content: string) => {
-    const button = <button onClick={() => close()}>ok</button>
+    const button = <button onClick={() => close()}>ok</button>;
     const close = _modal(content, [button])
 };
 const confirm = (content: string, yes?: () => void, no?: () => void) => {
