@@ -1,0 +1,21 @@
+@import "../helper";
+.peripheral{
+  height: 40px;
+  background: $mizuasagi-color;
+  margin: 4px 0;
+  color: #fff;
+}
+.content {
+  margin: 4px 0;
+  background: $tetsu-color;
+  color: #fff;
+}
+.aside {
+  background: $seiheki-color;
+  width: 88px;
+  color: #fff;
+  margin: 4px 0;
+}
+.content + .aside, .aside + .content, .aside + .zui-layout {
+  margin-left: 8px;
+}

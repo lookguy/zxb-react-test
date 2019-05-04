@@ -1,25 +1,21 @@
 @import "../helper";
 
 .zui-layout {
-  border: 3px solid #999;
   display: flex;
   flex-direction: column;
-  &.hasAside{
-    flex-direction: row;
-    .zui-layout {
-      flex-direction: column;
-    }
-  }
   &-content{
     flex-grow: 1;
-    background: $tetsu-color;
   }
-  &-header { background: $mizuasagi-color;}
-  &-footer {background: $seiheki-color;}
 
   & &{
     flex-grow: 1;
     border-color: #666;
     flex-direction: row;
+  }
+  &-hasAside{
+    flex-direction: row;
+    .zui-layout {
+      flex-direction: column;
+    }
   }
 }

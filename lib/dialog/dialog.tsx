@@ -28,7 +28,7 @@ const Dialog: React.FunctionComponent<Props> = (props) => {
             <div className={scopedClass("mask")} onClick={onClickMask}>
 
             </div>
-            <div className={scopedClass()}>
+            <div className={scopedClass('')}>
                 <div className={scopedClass("close")} onClick={onClickClose}>
                     <Icon name="close" />
                 </div>
