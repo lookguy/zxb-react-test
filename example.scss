@@ -49,10 +49,13 @@ body,#root{
         color: #333;
         text-decoration: none;
         display: block;
-        &:focus{
+        &.active{
           color: #66bab7;
           box-shadow: inset 0 0 0 0.2em #66bab7;
           transition: box-shadow .3s;
+        }
+        &:hover{
+          background: #eee;
         }
       }
     }
