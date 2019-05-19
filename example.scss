@@ -12,6 +12,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 pre{
   font-family: "Fira Code Medium", Consolas, monospace;
+  margin: 10px 0;
 }
 body,#root{
   height: 100%;
@@ -72,4 +73,23 @@ body,#root{
 
 .example{
   padding: 16px 0;
+}
+
+.show_source{
+  line-height: 1.499;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  border: 1px solid #1890ff;
+  height: 32px;
+  padding: 0 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #1890ff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.045);
 }
