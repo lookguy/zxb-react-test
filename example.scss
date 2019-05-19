@@ -10,6 +10,9 @@
 h1,h2,h3,h4,h5,h6 {
   font-weight: normal;
 }
+pre{
+  font-family: "Fira Code Medium", Consolas, monospace;
+}
 body,#root{
   height: 100%;
   background: #f6f6f6;
@@ -65,4 +68,8 @@ body,#root{
   margin-top: 64px;
   margin-left: 300px;
   padding: 30px;
+}
+
+.example{
+  padding: 16px 0;
 }
