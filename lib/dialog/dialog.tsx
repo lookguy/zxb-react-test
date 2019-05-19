@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Fragment, ReactNode, ReactFragment } from 'react';
+import {Fragment, ReactNode, ReactFragment} from 'react';
 import './dialog.scss'
 import Icon from "../icon/icon";
 import ReactDOM from 'react-dom';
@@ -30,16 +30,16 @@ const Dialog: React.FunctionComponent<Props> = (props) => {
             </div>
             <div className={scopedClass('')}>
                 <div className={scopedClass("close")} onClick={onClickClose}>
-                    <Icon name="close" />
+                    <Icon name="close"/>
                 </div>
                 <header className={scopedClass("header")}>tip</header>
                 <main className={scopedClass("main")}>{props.children}</main>
                 {props.buttons && props.buttons.length > 0 &&
-                    <footer className={scopedClass("footer")}>
-                        {props.buttons && props.buttons.map((button, inde_modal) =>
-                            React.cloneElement(button, { key: inde_modal })
-                        )}
-                    </footer>
+                <footer className={scopedClass("footer")}>
+                    {props.buttons && props.buttons.map((button, inde_modal) =>
+                        React.cloneElement(button, {key: inde_modal})
+                    )}
+                </footer>
                 }
             </div>
         </Fragment>;
@@ -54,7 +54,7 @@ Dialog.defaultProps = {
 
 const _modal = (content: ReactNode, buttons?: Array<React.ReactElement>, afterClose?: () => void) => {
     const close = () => {
-        ReactDOM.render(React.cloneElement(component, { visible: false }), div);
+        ReactDOM.render(React.cloneElement(component, {visible: false}), div);
         ReactDOM.unmountComponentAtNode(div);
         div.remove();
     };
@@ -62,9 +62,10 @@ const _modal = (content: ReactNode, buttons?: Array<React.ReactElement>, afterCl
         <Dialog
             visible={true}
             buttons={buttons}
-            onClose={() => { 
-                close(); 
-                afterClose && afterClose() }
+            onClose={() => {
+                close();
+                afterClose && afterClose()
+            }
             }>
             {content}
         </Dialog>;
@@ -97,5 +98,5 @@ const modal = (content: ReactNode | ReactFragment) => {
     return _modal(content);
 };
 
-export { alert, confirm, modal }
+export {alert, confirm, modal}
 export default Dialog;
