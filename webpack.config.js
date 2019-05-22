@@ -4,7 +4,7 @@ module.exports = {
         index: './lib/index.tsx'
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist/lib'),
         library: 'Zui',
         libraryTarget: 'umd',
     },

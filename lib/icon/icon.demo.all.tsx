@@ -1,8 +1,5 @@
 import React from 'react';
 import Icon from './icon';
-import * as fs from "fs";
-
-console.log(fs);
 
 const allIconsName = ["alipay","ban","check","close","down","font","happy","heart-shape","left","list","login","logout","minus","navigate-down","navigate-up","navigate-left","play","plus","qq","replay","right","search","star","up","wechat"];
 
